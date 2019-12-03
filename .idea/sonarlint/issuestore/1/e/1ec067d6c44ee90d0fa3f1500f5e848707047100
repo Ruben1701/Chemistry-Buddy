@@ -1,0 +1,10 @@
+
+isquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ùí†Œ8—öë-
+Fsquid:S1148&"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8ÄŠžçë-
+Fsquid:S11489"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8†ÿãéê-
+Fsquid:S11481"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8Ùùàêê-
+`squid:UselessImportCheck"5Remove this unused import 'java.util.logging.Logger'.(ƒ¥óš8¶‡¤çë-
+‚squid:S1488"_Immediately return this expression instead of assigning it to the temporary variable "session".(½Õ¡Óþÿÿÿÿ8ý–‰ë-
+~squid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ßö»÷þÿÿÿÿ8ûœšçë-
+}squid:S1488#"_Immediately return this expression instead of assigning it to the temporary variable "session".(–¶ôÆ8¶Þ¼êê-
+Fsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8šü¤çë-

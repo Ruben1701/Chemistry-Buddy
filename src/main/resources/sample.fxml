@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane alignment="center" hgap="10" minHeight="400.0" minWidth="700.0" prefHeight="529.0" prefWidth="724.0" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints maxWidth="0.0" minWidth="0.0" prefWidth="0.0" />
+      <ColumnConstraints maxWidth="0.0" minWidth="0.0" prefWidth="0.0" />
+      <ColumnConstraints maxWidth="672.0" minWidth="672.0" prefWidth="672.0" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints maxHeight="400.0" minHeight="400.0" prefHeight="400.0" />
+      <RowConstraints maxHeight="0.0" minHeight="0.0" prefHeight="0.0" />
+   </rowConstraints>
+   <children>
+    <AnchorPane minHeight="400.0" minWidth="700.0" prefHeight="479.0" prefWidth="700.0" scaleShape="false" GridPane.columnIndex="3">
+         <children>
+            <Pane layoutY="20.0" prefHeight="473.0" prefWidth="651.0">
+               <children>
+                  <ImageView fx:id="H" fitHeight="55.0" fitWidth="132.0" layoutX="14.0" layoutY="14.0" onMousePressed="#ElementClicked" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/1/H.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="Li" fitHeight="55.0" fitWidth="132.0" layoutX="14.0" layoutY="68.0" onMousePressed="#ElementClicked" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/1/Li.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="Na" fitHeight="55.0" fitWidth="132.0" layoutX="14.0" layoutY="122.0" onMousePressed="#ElementClicked" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/1/Na.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="Fr" fitHeight="55.0" fitWidth="132.0" layoutX="14.0" layoutY="284.0" onMousePressed="#ElementClicked" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/1/Fr.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="Rb" fitHeight="55.0" fitWidth="132.0" layoutX="14.0" layoutY="230.0" onMousePressed="#ElementClicked" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/1/Rb.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="K" fitHeight="55.0" fitWidth="132.0" layoutX="14.0" layoutY="176.0" onMousePressed="#ElementClicked" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/1/K.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="CS" fitHeight="55.0" fitWidth="132.0" layoutX="14.0" layoutY="338.0" onMousePressed="#ElementClicked" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/1/Cs.png" />
+                     </image>
+                  </ImageView>
+                  <TextArea fx:id="ElementInfotxt" editable="false" layoutX="148.0" layoutY="340.0" prefHeight="80.0" prefWidth="335.0" />
+                  <Button fx:id="testbtn" layoutX="235.0" layoutY="96.0" mnemonicParsing="false" onMouseClicked="#testclick" text="Button" />
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>
