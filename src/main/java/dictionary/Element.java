@@ -1,4 +1,4 @@
-package Dictionary;
+package dictionary;
 
 public class Element {
     public String Name;

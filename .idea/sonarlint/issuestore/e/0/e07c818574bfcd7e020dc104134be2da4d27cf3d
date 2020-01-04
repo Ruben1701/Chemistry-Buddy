@@ -1,13 +1,12 @@
 
-1squid:S1220""Move this file to a named package.
-gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Ú“„àúÿÿÿÿ
-bsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(î—¢‚
-gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(´êïûúÿÿÿÿ
-bsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¿¬Ì‚
-gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(žÆÂ®øÿÿÿÿ
-bsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Ú°à¬
-asquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Ÿƒ©4
-bsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Èµú÷
-gsquid:CommentedOutCodeLine*"<This block of commented-out lines of code should be removed.(¬ƒÎ¢øÿÿÿÿ
-bsquid:CommentedOutCodeLine."<This block of commented-out lines of code should be removed.(¿“ýì
-gsquid:CommentedOutCodeLine1"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ
+Fsquid:S1148"#Use a logger to log this exception.(ŽÚ¸ÿÿÿÿÿ8š‡¦‹õ-
+isquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(†‚˜þ8Îê‰“õ-
+Fsquid:S1148"#Use a logger to log this exception.(¢ÑØùÿÿÿÿ8š‡¦‹õ-
+ysquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(‰ì•8š‡¦‹õ-
+psquid:S2095"MUse try-with-resources or close this "FileInputStream" in a "finally" clause.(ú›¿ÿÿÿÿÿ8›±õ‘õ-
+Fsquid:S1148'"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8ÌžÐ’õ-
+rsquid:S2095"OUse try-with-resources or close this "ObjectInputStream" in a "finally" clause.(ÑÒ»¥øÿÿÿÿ8›±õ‘õ-
+[
+squid:S106"9Replace this use of System.out or System.err by a logger.(Æ–õûùÿÿÿÿ8š‡¦‹õ-
+rsquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÿÌò«ûÿÿÿÿ8š‡¦‹õ-
+msquid:S00100#"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(†¸‘Ë8¤ÿÌ’õ-

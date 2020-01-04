@@ -1,9 +1,6 @@
 
-[
-squid:S106"9Replace this use of System.out or System.err by a logger.(ÃıÖ”şÿÿÿÿ8´½éê-
-V
-squid:S106	"9Replace this use of System.out or System.err by a logger.(õëÕ‡8´½éê-
-U
-squid:S106"9Replace this use of System.out or System.err by a logger.(œ‡‡o8´½éê-
-[
-squid:S106"9Replace this use of System.out or System.err by a logger.(Íşº—øÿÿÿÿ8´½éê-
+nsquid:CommentedOutCodeLine("<This block of commented-out lines of code should be removed.(ĞåÇûÿÿÿÿ8°ÒÁ»õ-
+isquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(İœŒ8Ï†Ä»õ-
+Jsquid:S1948",Make "serializer" transient or serializable.(©ëÄÇ8¥Û‘¼õ-
+Zsquid:S2629"7Use the built-in formatting to construct this argument.(íõôØúÿÿÿÿ8 øÁ»õ-
+isquid:CommentedOutCodeLine/"<This block of commented-out lines of code should be removed.(è¢Öï8ÏÎ¾»õ-

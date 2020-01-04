@@ -2,22 +2,49 @@ package websocket;
 
 import javax.websocket.*;
 
+import serializer.Serializer;
+
+import java.util.logging.Level;
+import java.util.logging.LogManager;
+import java.util.logging.Logger;
+
 @ClientEndpoint
-public class EventClientSocket {
+public class EventClientSocket implements java.io.Serializable{
+
+    Serializer serializer = new Serializer();
+
     @OnOpen
     public void onWebSocketConnect() {
-        System.out.println("[Connected]");
+
+        LogManager lgmngr = LogManager.getLogManager();
+        Logger log = lgmngr.getLogger(Logger.GLOBAL_LOGGER_NAME);
+        log.log(Level.INFO, "[Connected]");
+        //System.out.println("[Connected]");
     }
+
     @OnMessage
     public void onWebSocketMessage(String message) {
-        System.out.println("[Received]: " + message);
+        LogManager lgmngr = LogManager.getLogManager();
+        Logger log = lgmngr.getLogger(Logger.GLOBAL_LOGGER_NAME);
+        log.log(Level.INFO, "[Received]: " + message);
+        serializer.Serialize(message);
     }
+
     @OnClose
     public void onWebSocketClose(CloseReason reason) {
-        System.out.println("[Closed]: " + reason);
+        LogManager lgmngr = LogManager.getLogManager();
+        Logger log = lgmngr.getLogger(Logger.GLOBAL_LOGGER_NAME);
+        String msg = "[Closed]: " + reason;
+        log.log(Level.WARNING, msg);
+
+        //System.out.println("[Closed]: " + reason);
     }
     @OnError
     public void onWebSocketError(Throwable cause) {
-        System.out.println("[ERROR]: " + cause.getMessage());
+        LogManager lgmngr = LogManager.getLogManager();
+        Logger log = lgmngr.getLogger(Logger.GLOBAL_LOGGER_NAME);
+        log.log(Level.SEVERE, "[ERROR]: " + cause.getMessage());
+        //System.out.println("[ERROR]: " + cause.getMessage());
     }
 }
+
