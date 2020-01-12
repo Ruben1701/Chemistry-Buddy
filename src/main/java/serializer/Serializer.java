@@ -2,12 +2,14 @@ package serializer;
 
 import java.io.FileOutputStream;
 import java.io.ObjectOutputStream;
+import interfaces.iSerializer;
 
-public class Serializer {
+public class Serializer implements iSerializer {
 
-    public void Serialize(String toSerialize){
+    @Override
+    public void Serialize(String toSerialize, String file){
         try {
-            FileOutputStream fileout = new FileOutputStream("src/main/java/Serializer/data.ser");
+            FileOutputStream fileout = new FileOutputStream(file);
             ObjectOutputStream oos = new ObjectOutputStream(fileout);
             oos.writeObject(toSerialize);
             oos.close();

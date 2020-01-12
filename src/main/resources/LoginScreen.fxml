@@ -6,7 +6,7 @@
 <?import javafx.scene.text.Text?>
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1"
-            xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.LoginController">
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
     <TextField fx:id="EmailTxt" layoutX="220.0" layoutY="106.0" promptText="Email"/>
     <TextField fx:id="PasswordTxt" layoutX="220.0" layoutY="155.0" promptText="Password"/>
     <Button fx:id="LoginBtn" layoutX="264.0" layoutY="212.0" mnemonicParsing="false" onAction="#LoginClicked"

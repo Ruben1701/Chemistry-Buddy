@@ -19,7 +19,6 @@ public class EventClientSocket implements java.io.Serializable{
         LogManager lgmngr = LogManager.getLogManager();
         Logger log = lgmngr.getLogger(Logger.GLOBAL_LOGGER_NAME);
         log.log(Level.INFO, "[Connected]");
-        //System.out.println("[Connected]");
     }
 
     @OnMessage
@@ -27,7 +26,7 @@ public class EventClientSocket implements java.io.Serializable{
         LogManager lgmngr = LogManager.getLogManager();
         Logger log = lgmngr.getLogger(Logger.GLOBAL_LOGGER_NAME);
         log.log(Level.INFO, "[Received]: " + message);
-        serializer.Serialize(message);
+        serializer.Serialize(message, "src/main/java/Serializer/data.ser");
     }
 
     @OnClose
@@ -36,15 +35,12 @@ public class EventClientSocket implements java.io.Serializable{
         Logger log = lgmngr.getLogger(Logger.GLOBAL_LOGGER_NAME);
         String msg = "[Closed]: " + reason;
         log.log(Level.WARNING, msg);
-
-        //System.out.println("[Closed]: " + reason);
     }
     @OnError
     public void onWebSocketError(Throwable cause) {
         LogManager lgmngr = LogManager.getLogManager();
         Logger log = lgmngr.getLogger(Logger.GLOBAL_LOGGER_NAME);
         log.log(Level.SEVERE, "[ERROR]: " + cause.getMessage());
-        //System.out.println("[ERROR]: " + cause.getMessage());
     }
 }
 

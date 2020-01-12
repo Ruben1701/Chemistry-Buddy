@@ -20,10 +20,6 @@ public class EventClient {
         Logger log = lgmngr.getLogger(Logger.GLOBAL_LOGGER_NAME);
         WebSocketContainer container = ContainerProvider.getWebSocketContainer();
         try {
-            // Attempt Connect
-            // Close session
-            //Thread.sleep(10000);
-            //closeConnection(session);
             return openConnection(container, messageType);
         } catch (Exception e) {
             log.log(Level.SEVERE, (Supplier<String>) e);

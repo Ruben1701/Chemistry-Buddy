@@ -1,15 +1,17 @@
 package serializer;
 
 import java.io.*;
+import interfaces.iDeserializer;
 
-public class LoadSerialized {
+public class LoadSerialized implements iDeserializer{
 
-    public String LoadQuestion() {
+    @Override
+    public String LoadQuestion(String file) {
 
         String question;
         try
         {
-            FileInputStream fis = new FileInputStream("src/main/java/Serializer/data.ser");
+            FileInputStream fis = new FileInputStream(file);
             ObjectInputStream ois = new ObjectInputStream(fis);
 
             question = (String) ois.readObject();
@@ -32,6 +34,7 @@ public class LoadSerialized {
         return question;
     }
 
+    @Override
     public void ClearFile() {
         try {
             new FileOutputStream("src/main/java/Serializer/data.ser").close();

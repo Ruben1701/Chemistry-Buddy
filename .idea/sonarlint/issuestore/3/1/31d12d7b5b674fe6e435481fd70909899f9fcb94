@@ -1,0 +1,9 @@
+
+?squid:S1148"#Use a logger to log this exception.(Ú¸ÿÿÿÿÿ
+?squid:S1148"#Use a logger to log this exception.(¢ÑØùÿÿÿÿ
+bsquid:CommentedOutCodeLine!"<This block of commented-out lines of code should be removed.(†‚˜ş
+ksquid:S2095"OUse try-with-resources or close this "ObjectInputStream" in a "finally" clause.(ÑÒ»¥øÿÿÿÿ
+?squid:S1148*"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+T
+squid:S106"9Replace this use of System.out or System.err by a logger.(Æ–õûùÿÿÿÿ
+isquid:S2095"MUse try-with-resources or close this "FileInputStream" in a "finally" clause.(¾¡½ßÿÿÿÿÿ

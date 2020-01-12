@@ -1,15 +1,0 @@
-
-msquid:S00100."NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ù½ÁŒ8ÆèÜêñ-
-ˆ"squid:ClassVariableVisibilityCheck"SMake element a static final constant or non-public and provide accessors if needed.(Ç·ØÛ8§ß€îê-
-rsquid:S00100%"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ôºˆ÷úÿÿÿÿ8„Ûšïê-
-nsquid:CommentedOutCodeLine2"<This block of commented-out lines of code should be removed.(´£ç‚øÿÿÿÿ8—‡ïøñ-
-V
-squid:S106*"9Replace this use of System.out or System.err by a logger.(ëôßÊ8Ú–æìñ-
-"squid:ClassVariableVisibilityCheck"ZMake ElementInfotxt a static final constant or non-public and provide accessors if needed.(¿š¬‘úÿÿÿÿ
-Ÿsquid:S1186."€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ù½ÁŒ8ÆèÜêñ-
-rsquid:S00100:"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÀÀÑ§ûÿÿÿÿ8æÌÝêñ-
-¤squid:S1186!"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(•‘ÝŸüÿÿÿÿ8„Ûšïê-
-lsquid:S001001"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(—²ºi8é¤Ýêñ-
-wsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÝØ˜Žúÿÿÿÿ
-"squid:ClassVariableVisibilityCheck"SMake session a static final constant or non-public and provide accessors if needed.(áÿ“ƒýÿÿÿÿ8ÆÏŒë-
-vsquid:S00116"YRename this field "ElementInfotxt" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¿š¬‘úÿÿÿÿ

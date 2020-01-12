@@ -1,0 +1,15 @@
+
+‰"squid:ClassVariableVisibilityCheck"TMake EmailTxt a static final constant or non-public and provide accessors if needed.(ÜÃä8ÕÓÿ¡ø-
+rsquid:S00116"SRename this field "EmailTxt" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÜÃä8Ã¼ò…ï-
+‘"squid:ClassVariableVisibilityCheck"WMake PasswordTxt a static final constant or non-public and provide accessors if needed.(Ùäşñúÿÿÿÿ8ÕÓÿ¡ø-
+š"squid:ClassVariableVisibilityCheck"`Make userInterfaceService a static final constant or non-public and provide accessors if needed.(”ö´şÿÿÿÿ8ÕÓÿ¡ø-
+ksquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Í¼Ùçüÿÿÿÿ
+rsquid:S00100%"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÍêæÌşÿÿÿÿ8äóİ†ï-
+Lsquid:S1481")Remove this unused "pane" local variable.(ã¹å¯ùÿÿÿÿ8”ô¨ù-
+Msquid:S1481"/Remove this unused "controller" local variable.(Ê£Ùí8Ù±ÛÍù-
+nsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ûÈÛ§ùÿÿÿÿ8¡ÉãÜù-
+nsquid:CommentedOutCodeLine "<This block of commented-out lines of code should be removed.(á¼ôÒûÿÿÿÿ8Ù±ÛÍù-
+[squid:S1854"8Remove this useless assignment to local variable "pane".(ã¹å¯ùÿÿÿÿ8”ô¨ù-
+zsquid:S00116"VRename this field "PasswordTxt" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ùäşñúÿÿÿÿ8Ü´ú†ï-
+\squid:S1854">Remove this useless assignment to local variable "controller".(Ê£Ùí8Ù±ÛÍù-
+Jsquid:S1905"'Remove this unnecessary cast to "Pane".(ã¹å¯ùÿÿÿÿ8ÏÀô¨ù-
