@@ -88,19 +88,17 @@ public class ProfileService implements iProfile {
             JSONArray fullArray = (JSONArray) parser.parse(stringJson);
             JSONArray ins = new JSONArray();
 
-            for(int i = 0; i < fullArray.size(); i++)
-            {
-                JSONObject o = (JSONObject) fullArray.get(i);
+            for (Object value : fullArray) {
+                JSONObject o = (JSONObject) value;
                 ins.add(o.get("Achievement_Id"));
             }
 
             JSONArray jsonArray = new JSONArray();
 
-            for(int i = 0; i < ins.size(); i++)
-            {
+            for (Object in : ins) {
                 WebTarget target = client.target("http://localhost:8091/achievement/getachievement");
                 Form form1 = new Form();
-                form1.param("AchievementId", ins.get(i).toString());
+                form1.param("AchievementId", in.toString());
                 response = target.request().post(Entity.entity(form1, MediaType.APPLICATION_FORM_URLENCODED));
 
                 String achievementJson = response.readEntity(String.class);

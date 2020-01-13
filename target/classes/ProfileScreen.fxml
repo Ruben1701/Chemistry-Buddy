@@ -68,15 +68,12 @@
                 </GridPane>
             </VBox>
             <BorderPane prefHeight="1051.0" prefWidth="74.0" />
-            <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1051.0" prefWidth="1700.0">
-            <children>
-               <HBox prefHeight="1053.0" prefWidth="1700.0">
-                  <children>
-                     <ListView fx:id="userAchievementsLV" prefHeight="1051.0" prefWidth="417.0" />
-                     <ListView fx:id="allAxchievementsLV" prefHeight="1051.0" prefWidth="462.0" />
-                  </children>
-               </HBox>
-            </children>
+            <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                  prefHeight="1051.0" prefWidth="1700.0">
+                <HBox prefHeight="1053.0" prefWidth="1700.0">
+                    <ListView fx:id="userAchievementsLV" prefHeight="1051.0" prefWidth="417.0"/>
+                    <ListView fx:id="allAxchievementsLV" prefHeight="1051.0" prefWidth="462.0"/>
+                </HBox>
             </VBox>
         </HBox>
     </VBox>

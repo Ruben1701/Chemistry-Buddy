@@ -32,51 +32,21 @@ public class RegisterService implements iRegister {
 
         // Perform the query
 
-        try (CloseableHttpClient httpClient = HttpClients.createDefault();
-             CloseableHttpResponse response = httpClient.execute(httpPost)) {
-            log.log(Level.INFO, "[Status Line] : " + response.getStatusLine());
-            HttpEntity entity = response.getEntity();
-            final String entityString = EntityUtils.toString(entity);
-            log.log(Level.INFO, "[Entity] : " + entityString);
-            Gson gson = new Gson();
-            RegisterService.Response jsonResponse = gson.fromJson(entityString, RegisterService.Response.class);
-            String stringResult = jsonResponse.getResult();
-            log.log(Level.INFO, "[Result] : " + stringResult);
-
-        } catch (IOException e) {
-            log.log(Level.SEVERE, "IOException : " + e.toString());
-        }
+//        try (CloseableHttpClient httpClient = HttpClients.createDefault();
+//             CloseableHttpResponse response = httpClient.execute(httpPost)) {
+//            log.log(Level.INFO, "[Status Line] : " + response.getStatusLine());
+//            HttpEntity entity = response.getEntity();
+//            final String entityString = EntityUtils.toString(entity);
+//            log.log(Level.INFO, "[Entity] : " + entityString);
+//            Gson gson = new Gson();
+//            RegisterService.Response jsonResponse = gson.fromJson(entityString, RegisterService.Response.class);
+//            String stringResult = jsonResponse.getResult();
+//            log.log(Level.INFO, "[Result] : " + stringResult);
+//
+//        } catch (IOException e) {
+//            log.log(Level.SEVERE, "IOException : " + e.toString());
+//        }
 
     }
 
-    class Response {
-
-        private String operation = "n/a";
-        private String expression = "n/a";
-        private String result = "n/a";
-
-        public String getOperation() {
-            return operation;
-        }
-
-        public void setOperation(String operation) {
-            this.operation = operation;
-        }
-
-        public String getExpression() {
-            return expression;
-        }
-
-        public void setExpression(String expression) {
-            this.expression = expression;
-        }
-
-        public String getResult() {
-            return result;
-        }
-
-        public void setResult(String result) {
-            this.result = result;
-        }
-    }
 }

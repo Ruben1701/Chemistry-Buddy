@@ -8,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class LoginServiceTest {
 
     @Test
-    void correctlogin() {
+    void correctLogin() {
         LoginService loginService = new LoginService();
         String Username = "Test";
         String Password = "Test";
@@ -17,11 +17,11 @@ class LoginServiceTest {
     }
 
     @Test
-    void incorrectlogin() {
+    void incorrectLogin() {
         LoginService loginService = new LoginService();
         String Username = "Test";
         String Password = "Test";
         LoginDTO loginDTO = new LoginDTO(Username, "blah");
-        assertEquals(loginService.login(loginDTO), "8");
+        assertNotEquals(loginService.login(loginDTO), "8");
     }
 }
