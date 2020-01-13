@@ -9,5 +9,5 @@ addons:
 
 script:
   #only sonarcloud
-- mvn -DskipTests=true org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar -Dsonar.projectKey=Ruben170_Chemistry-Buddy
+- mvn -DskipTests=true org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar -Pcoverage -Dsonar.projectKey=Ruben170_Chemistry-Buddy
 
