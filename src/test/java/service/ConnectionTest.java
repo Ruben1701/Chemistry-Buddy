@@ -39,5 +39,9 @@ public class ConnectionTest {
         //assertNull(session);
     }
 
+    void nothing(){
+
+    }
+
 
 }
