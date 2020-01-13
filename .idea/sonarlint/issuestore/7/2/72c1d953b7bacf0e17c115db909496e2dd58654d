@@ -1,13 +1,0 @@
-
-¯squid:S1192P"Define a constant instead of duplicating this literal "/Users/ruben/Desktop/Big Idea/Chemistry-Buddy/src/main/java/serializer/data.ser" 3 times.(¨‡šø8Œá©Îù-
-’"squid:ClassVariableVisibilityCheck!"XMake quizFinished a static final constant or non-public and provide accessors if needed.(ƒÔê‡üÿÿÿÿ8’‰€¢ø-
-"squid:ClassVariableVisibilityCheck"SMake session a static final constant or non-public and provide accessors if needed.(áÿ“ƒıÿÿÿÿ8’‰€¢ø-
-rsquid:S001006"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ôºˆ÷úÿÿÿÿ8â¼“õ-
-_squid:S1075P"ARefactor your code to get this URI from a customizable parameter.(¨‡šø8•¥Îù-
-Œ"squid:ClassVariableVisibilityCheck"WMake QuestionLbl a static final constant or non-public and provide accessors if needed.(è²‘õ8’‰€¢ø-
-qsquid:S00116 "RRename this field "Quitbtn" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ëì©¤8Ïáü‹÷-
-psquid:HiddenFieldCheck-"BRename "loadSerialized" which hides the field declared at line 36.(’ÑÃòşÿÿÿÿ8ìä£Ôù-
-Psquid:S11357"2Complete the task associated to this TODO comment.(çµ¬ù8©¨à÷-
-usquid:S00116"VRename this field "QuestionLbl" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(è²‘õ8’Ÿÿ‘õ-
-ˆ"squid:ClassVariableVisibilityCheck "SMake Quitbtn a static final constant or non-public and provide accessors if needed.(Ëì©¤8’‰€¢ø-
-msquid:S00100L"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¶ØÇ8õ¾¸ß÷-

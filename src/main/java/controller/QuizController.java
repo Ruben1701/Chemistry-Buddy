@@ -42,7 +42,6 @@ public class QuizController implements Initializable {
         FileMonitor();
         session = quizService.startQuiz(eventClient);
 
-        LoadSerialized loadSerialized = new LoadSerialized();
         String message = "UserId : " + loadSerialized.LoadQuestion("/Users/ruben/Desktop/Big Idea/Chemistry-Buddy/src/main/java/serializer/user.ser");
         quizService.sendAnswer(eventClient, message, session);
     }

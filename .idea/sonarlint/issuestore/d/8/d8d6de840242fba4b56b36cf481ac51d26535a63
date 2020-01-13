@@ -1,20 +1,0 @@
-
-[
-squid:S106P"9Replace this use of System.out or System.err by a logger.(‡‚¸ìûÿÿÿÿ8Ò€ŸĞø-
-Fsquid:S1148?"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8æÏ÷Ïù-
-asquid:UselessImportCheck"6Remove this unused import 'com.google.gson.JsonArray'.(ÎöêŠ8ıÄúĞù-
-U
-squid:S106~"9Replace this use of System.out or System.err by a logger.(Ì¬š#8Í†ÔÑù-
-squid:S1319)"zThe type of the "allachievements" object should be an interface such as "List" rather than the implementation "ArrayList".(Œğü²ùÿÿÿÿ8²’’Ñø-
-–"squid:ClassVariableVisibilityCheck*"\Make userachievements a static final constant or non-public and provide accessors if needed.(”ûáğıÿÿÿÿ8‘â¤ªù-
-“"squid:ClassVariableVisibilityCheck("^Make allAxchievementsLV a static final constant or non-public and provide accessors if needed.(İ ûÁ8³¤ëĞø-
-“"squid:ClassVariableVisibilityCheck'"^Make userAchievementsLV a static final constant or non-public and provide accessors if needed.(ô†‚©8…×êĞø-
-•"squid:ClassVariableVisibilityCheck)"[Make allachievements a static final constant or non-public and provide accessors if needed.(Œğü²ùÿÿÿÿ8ö“£ªù-
-[
-squid:S106E"9Replace this use of System.out or System.err by a logger.(Êµ¯üÿÿÿÿ8Ò€ŸĞø-
-[
-squid:S106M"9Replace this use of System.out or System.err by a logger.(ŞæÊïúÿÿÿÿ8Ò€ŸĞø-
-squid:S1319*"{The type of the "userachievements" object should be an interface such as "List" rather than the implementation "ArrayList".(”ûáğıÿÿÿÿ8‘â¤ªù-
-[
-squid:S106W"9Replace this use of System.out or System.err by a logger.(‘ÍËÙùÿÿÿÿ8Ò€ŸĞø-
-msquid:S00100Œ"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(—²ºi8Í†ÔÑù-

@@ -16,21 +16,18 @@ public class LoginService implements iLogin {
     Client client = ClientBuilder.newClient();
 
 
-        //Setting the post method url to the client
         WebTarget webTarget = client.target("http://localhost:8090/auth/login");
 
-        //Add key-value pair into the form object
         Form form = new Form();
         form.param("Email", loginDTO.getUsername());
         form.param("Password", loginDTO.getPassword());
 
-        //Send the form object along with the post call
         Response response = webTarget.request().post(Entity.entity(form, MediaType.APPLICATION_FORM_URLENCODED));
         if (response.getStatus() == 200){
             String stringJson = response.readEntity(String.class);
-            stringJson = stringJson.replaceAll("\\D+","");
+            String UserID = stringJson.replaceAll("\\D+","");
 
-            return stringJson;
+            return UserID;
         }
 
         else {

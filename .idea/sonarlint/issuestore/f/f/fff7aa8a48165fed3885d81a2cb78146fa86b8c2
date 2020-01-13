@@ -1,11 +1,0 @@
-
-{squid:S00116"WRename this field "Achievements" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(èëˆıúÿÿÿÿ8áƒşĞø-
-usquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ş ˜Áşÿÿÿÿ8ş©øĞø-
-usquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ş ˜Áşÿÿÿÿ8ÆÑøĞø-
-Fsquid:S1068
-"(Remove this unused "name" private field.(Ë¥¼8ÛÖúĞø-
-[squid:UselessImportCheck"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8òÓÑø-
-usquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ş ˜Áşÿÿÿÿ8ÆÑøĞø-
-[squid:UselessImportCheck"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8šçşĞø-
-Hsquid:S1068"*Remove this unused "points" private field.(Ñúü†8ÈùĞø-
-Isquid:S1068	"&Remove this unused "id" private field.(ôç¼Óşÿÿÿÿ8µäøĞø-
