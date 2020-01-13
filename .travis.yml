@@ -8,5 +8,5 @@ addons:
       secure: "72b623259fc1037aa0a07e2efc7708e35cea0a74" # encrypted value of your token
       
 script: 
-- mvn clean verify test
+- mvn clean verify
 - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar -Dsonar.projectKey=Ruben170_Chemistry-Buddy
