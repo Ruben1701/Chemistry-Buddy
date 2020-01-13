@@ -9,3 +9,4 @@ addons:
       
 script: 
 - mvn -DskipTests=true org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar -Dsonar.projectKey=Ruben170_Chemistry-Buddy
+
