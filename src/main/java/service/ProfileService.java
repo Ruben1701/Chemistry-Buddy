@@ -25,6 +25,7 @@ import javax.ws.rs.core.Form;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import java.io.IOException;
+import java.lang.annotation.Retention;
 import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.LogManager;
@@ -58,9 +59,8 @@ public class ProfileService implements iProfile {
             Gson gson = new Gson();
 
             allachievements = gson.fromJson(entityString, allachievements.getClass());
-            ObservableList<Achievement> achievementsObservable = FXCollections.observableArrayList(allachievements);
 
-            return achievementsObservable;
+            return FXCollections.observableArrayList(allachievements);
         } catch (IOException e) {
 
             log.log(Level.SEVERE, "IOException : " + e.toString());
@@ -96,24 +96,29 @@ public class ProfileService implements iProfile {
             JSONArray jsonArray = new JSONArray();
 
             for (Object in : ins) {
-                WebTarget target = client.target("http://localhost:8091/achievement/getachievement");
-                Form form1 = new Form();
-                form1.param("AchievementId", in.toString());
-                response = target.request().post(Entity.entity(form1, MediaType.APPLICATION_FORM_URLENCODED));
 
-                String achievementJson = response.readEntity(String.class);
-                System.out.println(achievementJson);
-
-                response.close();
-                JSONObject jsonObject = (JSONObject) parser.parse(achievementJson);
-                jsonArray.add(jsonObject);
+                jsonArray.add(getAchievementInfo(in));
 
             }
 
 
-            ObservableList<Achievement> achievementsObservable = FXCollections.observableArrayList(jsonArray);
-            return achievementsObservable;
+            return FXCollections.observableArrayList(jsonArray);
         }
         return null;
+    }
+
+    public JSONObject getAchievementInfo(Object in) throws ParseException {
+        Client client = ClientBuilder.newClient();
+        JSONParser parser = new JSONParser();
+        WebTarget target = client.target("http://localhost:8091/achievement/getachievement");
+        Form form1 = new Form();
+        form1.param("AchievementId", in.toString());
+        Response response = target.request().post(Entity.entity(form1, MediaType.APPLICATION_FORM_URLENCODED));
+
+        String achievementJson = response.readEntity(String.class);
+        System.out.println(achievementJson);
+
+        response.close();
+        return (JSONObject) parser.parse(achievementJson);
     }
 }

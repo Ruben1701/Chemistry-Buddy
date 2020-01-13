@@ -22,7 +22,7 @@ public class Controller implements Initializable {
 
     public TextArea ElementInfotxt;
     private Player currentPlayer;
-    UserInterfaceService userInterfaceService = new UserInterfaceService();
+    final UserInterfaceService userInterfaceService = new UserInterfaceService();
 
 
     @Override

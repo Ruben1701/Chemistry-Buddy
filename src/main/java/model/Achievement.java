@@ -2,9 +2,6 @@ package model;
 
 import javafx.collections.ObservableList;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class Achievement {
     private ObservableList<String> Achievements;
 

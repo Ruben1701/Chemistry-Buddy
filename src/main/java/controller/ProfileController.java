@@ -20,7 +20,7 @@ public class ProfileController implements Initializable {
     public ListView userAchievementsLV;
     public ListView allAxchievementsLV;
 
-    UserInterfaceService userInterfaceService = new UserInterfaceService();
+    final UserInterfaceService userInterfaceService = new UserInterfaceService();
 
 
     @Override

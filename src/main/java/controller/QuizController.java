@@ -8,8 +8,6 @@ import javafx.scene.control.*;
 import javafx.scene.input.MouseEvent;
 
 import java.net.URL;
-import java.util.Dictionary;
-import java.util.ResourceBundle;
 
 import model.dictionary.ElementDictionary;
 import model.dictionary.Element;
@@ -32,10 +30,10 @@ public class QuizController implements Initializable {
     public Button Quitbtn;
     public boolean quizFinished;
 
-    EventClient eventClient = new EventClient();
-    LoadSerialized loadSerialized = new LoadSerialized();
-    QuizService quizService = new QuizService();
-    UserInterfaceService userInterfaceService = new UserInterfaceService();
+    final EventClient eventClient = new EventClient();
+    final LoadSerialized loadSerialized = new LoadSerialized();
+    final QuizService quizService = new QuizService();
+    final UserInterfaceService userInterfaceService = new UserInterfaceService();
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {

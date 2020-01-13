@@ -1,17 +1,8 @@
 package service;
 import interfaces.iQuiz;
-import serializer.FileWatcher;
 import websocket.EventClient;
 
 import javax.websocket.Session;
-import java.io.File;
-import java.util.Date;
-import java.util.Objects;
-import java.util.Timer;
-import java.util.TimerTask;
-import java.util.logging.Level;
-import java.util.logging.LogManager;
-import java.util.logging.Logger;
 
 public class QuizService implements iQuiz {
     @Override

@@ -20,6 +20,13 @@ class ProfileServiceTest {
         Serializer serializer = new Serializer();
         serializer.Serialize("8", "/Users/ruben/Desktop/Big Idea/Chemistry-Buddy/src/main/java/serializer/user.ser");
         assertNotNull(profileService.getUserAchievements());
-
     }
+
+    @Test
+    void getAchievmentInfo() throws ParseException {
+        Object in = "1";
+        String ExpectedJsonString = "{\"Achievement_Points\":100,\"Achievement_Name\":\"Play a Game!\",\"Achievement_Id\":1}";
+        assertEquals(profileService.getAchievementInfo(in).toString(), ExpectedJsonString);
+    }
+
 }

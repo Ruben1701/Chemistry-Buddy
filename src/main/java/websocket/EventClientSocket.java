@@ -11,7 +11,7 @@ import java.util.logging.Logger;
 @ClientEndpoint
 public class EventClientSocket implements java.io.Serializable{
 
-    Serializer serializer = new Serializer();
+    final Serializer serializer = new Serializer();
 
     @OnOpen
     public void onWebSocketConnect() {

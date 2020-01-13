@@ -1,6 +1,9 @@
 package service;
 
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
+import websocket.EventClient;
+import javax.websocket.Session;
 import javax.ws.rs.client.Client;
 import javax.ws.rs.client.ClientBuilder;
 import javax.ws.rs.client.WebTarget;
@@ -9,6 +12,9 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class ConnectionTest {
 
+    private static Session session;
+    private EventClient eventClient = new EventClient();
+
     //first start the TestRestService
     @Test
     void testRestConnection(){
@@ -16,12 +22,22 @@ public class ConnectionTest {
         WebTarget webTarget = client.target("http://localhost:8090/service/test/available");
         Response response = webTarget.request().get();
 
-        assertEquals(response.readEntity(String.class), "yes");
+        assertEquals("yes", response.readEntity(String.class));
 
+    }
+
+    //first start the websocketserver
+    @Test
+    void testWebsocketConnection(){
+        session = eventClient.websocket("quiz");
+        assertNotNull(session);
     }
 
     @Test
-    void testWebsocketConnection(){
-        //TODO
+    void closeConnection(){
+        eventClient.closeConnection(session);
+        //assertNull(session);
     }
+
+
 }

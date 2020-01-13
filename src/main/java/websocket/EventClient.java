@@ -59,6 +59,7 @@ public class EventClient {
         Logger log = lgmngr.getLogger(Logger.GLOBAL_LOGGER_NAME);
         try {
             session.close();
+            log.log(Level.INFO, "Disconnected");
         } catch (IOException e) {
             log.log(Level.SEVERE, (Supplier<String>) e);
         }

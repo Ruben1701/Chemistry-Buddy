@@ -1,29 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="leuke commit message">
-      <change afterPath="$PROJECT_DIR$/src/test/java/controller/LoginControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/service/ConnectionTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/service/ProfileServiceTest.java" afterDir="false" />
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="Pre code cleanup">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/interfaces/iLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/interfaces/iLogin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/interfaces/iQuiz.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/interfaces/iQuiz.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/interfaces/iUserInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/interfaces/iUserInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/ProfileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/ProfileController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/QuizController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/QuizController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/Achievement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Achievement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/serializer/user.ser" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/serializer/user.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/DTO/LoginDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/DTO/LoginDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/DTO/RegisterDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/DTO/RegisterDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/dictionary/Element.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/dictionary/Element.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/serializer/FileWatcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/serializer/FileWatcher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/serializer/data.ser" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/serializer/data.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/LoginService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/LoginService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/service/ProfileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/ProfileService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/QuizService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/QuizService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/service/RegisterService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/RegisterService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/toimplement/message/MessageDecoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/toimplement/message/MessageDecoder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/toimplement/message/MessageEncoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/toimplement/message/MessageEncoder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/websocket/EventClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/websocket/EventClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/websocket/EventClientSocket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/websocket/EventClientSocket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/HomeScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/HomeScreen.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/ProfileScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ProfileScreen.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/QuizScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/QuizScreen.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/service/LoginServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/service/LoginServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/controller/LoginControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/controller/LoginControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/service/ConnectionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/service/ConnectionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/service/ProfileServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/service/ProfileServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/HomeScreen.fxml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ProfileScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ProfileScreen.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/QuizScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/QuizScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/LoginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/ProfileController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/ProfileController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/controller/QuizController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/QuizController$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/QuizController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/QuizController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/model/Achievement.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/Achievement.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/DTO/LoginDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/DTO/LoginDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/DTO/RegisterDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/DTO/RegisterDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/Player.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/dictionary/Element.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/dictionary/Element.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/serializer/FileWatcher.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/serializer/FileWatcher.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/service/LoginService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/LoginService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/service/ProfileService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/ProfileService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/service/RegisterService$Response.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/service/QuizService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/QuizService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/service/RegisterService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/RegisterService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/service/LoginServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/service/LoginServiceTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/toimplement/message/MessageDecoder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/toimplement/message/MessageDecoder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/toimplement/message/MessageEncoder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/toimplement/message/MessageEncoder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/websocket/EventClientSocket.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/websocket/EventClientSocket.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -200,7 +224,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="JUnit.ConnectionTest">
     <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
       <option name="VMOptions" />
       <option name="arguments" />
@@ -284,7 +308,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ConnectionTest.testRestConnection" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ConnectionTest.closeConnection" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Chemistry-Buddy" />
       <extension name="coverage">
         <pattern>
@@ -294,7 +318,27 @@
       </extension>
       <option name="PACKAGE_NAME" value="service" />
       <option name="MAIN_CLASS_NAME" value="service.ConnectionTest" />
-      <option name="METHOD_NAME" value="testRestConnection" />
+      <option name="METHOD_NAME" value="closeConnection" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConnectionTest.testWebsocketConnection" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Chemistry-Buddy" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="service" />
+      <option name="MAIN_CLASS_NAME" value="service.ConnectionTest" />
+      <option name="METHOD_NAME" value="testWebsocketConnection" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="TEST_SEARCH_SCOPE">
@@ -323,7 +367,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProfileServiceTest.getAllAchievements" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ProfileServiceTest.getAchievmentInfo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Chemistry-Buddy" />
       <extension name="coverage">
         <pattern>
@@ -333,27 +377,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="service" />
       <option name="MAIN_CLASS_NAME" value="service.ProfileServiceTest" />
-      <option name="METHOD_NAME" value="getAllAchievements" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ProfileServiceTest.getUserAchievements" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Chemistry-Buddy" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="service" />
-      <option name="MAIN_CLASS_NAME" value="service.ProfileServiceTest" />
-      <option name="METHOD_NAME" value="getUserAchievements" />
+      <option name="METHOD_NAME" value="getAchievmentInfo" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="TEST_SEARCH_SCOPE">
@@ -397,19 +421,19 @@
     <list>
       <item itemvalue="Application.Main" />
       <item itemvalue="Application.Run 5" />
-      <item itemvalue="JUnit.ConnectionTest" />
-      <item itemvalue="JUnit.ConnectionTest.testRestConnection" />
-      <item itemvalue="JUnit.ProfileServiceTest.getAllAchievements" />
-      <item itemvalue="JUnit.ProfileServiceTest.getUserAchievements" />
       <item itemvalue="JUnit.ProfileServiceTest" />
+      <item itemvalue="JUnit.ProfileServiceTest.getAchievmentInfo" />
+      <item itemvalue="JUnit.ConnectionTest.testWebsocketConnection" />
+      <item itemvalue="JUnit.ConnectionTest.closeConnection" />
+      <item itemvalue="JUnit.ConnectionTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ProfileServiceTest" />
-        <item itemvalue="JUnit.ProfileServiceTest.getUserAchievements" />
-        <item itemvalue="JUnit.ProfileServiceTest.getAllAchievements" />
-        <item itemvalue="JUnit.ConnectionTest.testRestConnection" />
         <item itemvalue="JUnit.ConnectionTest" />
+        <item itemvalue="JUnit.ConnectionTest.closeConnection" />
+        <item itemvalue="JUnit.ConnectionTest.testWebsocketConnection" />
+        <item itemvalue="JUnit.ProfileServiceTest.getAchievmentInfo" />
+        <item itemvalue="JUnit.ProfileServiceTest" />
       </list>
     </recent_temporary>
   </component>
@@ -483,7 +507,7 @@
       <workItem from="1578750314481" duration="21727000" />
       <workItem from="1578863841243" duration="4191000" />
       <workItem from="1578914234825" duration="26000" />
-      <workItem from="1578914275958" duration="4969000" />
+      <workItem from="1578914275958" duration="8300000" />
     </task>
     <task id="LOCAL-00001" summary="leuke commit message">
       <created>1578156530347</created>
@@ -520,7 +544,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578915779928</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Pre code cleanup">
+      <created>1578919819740</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1578919819740</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -543,7 +574,8 @@
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <MESSAGE value="leuke commit message" />
-    <option name="LAST_COMMIT_MESSAGE" value="leuke commit message" />
+    <MESSAGE value="Pre code cleanup" />
+    <option name="LAST_COMMIT_MESSAGE" value="Pre code cleanup" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -551,7 +583,7 @@
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/websocket/EventClient.java</url>
           <line>44</line>
-          <properties class="websocket.EventClient">
+          <properties class="websocket.EventClient" method="sendMessage">
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="17" />

@@ -25,9 +25,8 @@ public class LoginService implements iLogin {
         Response response = webTarget.request().post(Entity.entity(form, MediaType.APPLICATION_FORM_URLENCODED));
         if (response.getStatus() == 200){
             String stringJson = response.readEntity(String.class);
-            String UserID = stringJson.replaceAll("\\D+","");
 
-            return UserID;
+            return stringJson.replaceAll("\\D+","");
         }
 
         else {

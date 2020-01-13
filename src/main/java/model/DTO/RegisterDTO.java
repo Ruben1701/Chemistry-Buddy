@@ -1,8 +1,8 @@
 package model.DTO;
 
 public class RegisterDTO {
-    private String username;
-    private String password;
+    private final String username;
+    private final String password;
 
     public RegisterDTO(String Username, String Password){
         this.username = Username;
