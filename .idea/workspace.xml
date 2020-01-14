@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="test">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/interfaces/iDeserializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/interfaces/iDeserializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/interfaces/iSerializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/interfaces/iSerializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/serializer/LoadSerialized.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/serializer/LoadSerialized.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/serializer/Serializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/serializer/Serializer.java" afterDir="false" />
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="bug fixes">
+      <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -460,7 +456,7 @@
       <workItem from="1578863841243" duration="4191000" />
       <workItem from="1578914234825" duration="26000" />
       <workItem from="1578914275958" duration="10142000" />
-      <workItem from="1578926512006" duration="10226000" />
+      <workItem from="1578926512006" duration="10406000" />
     </task>
     <task id="LOCAL-00001" summary="leuke commit message">
       <created>1578156530347</created>
@@ -581,7 +577,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579007547003</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="bug fixes">
+      <created>1579008118057</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1579008118057</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -607,7 +610,8 @@
     <MESSAGE value="Pre code cleanup" />
     <MESSAGE value="Added Tests" />
     <MESSAGE value="test" />
-    <option name="LAST_COMMIT_MESSAGE" value="test" />
+    <MESSAGE value="bug fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="bug fixes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
