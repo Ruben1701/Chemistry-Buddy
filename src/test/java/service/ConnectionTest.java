@@ -3,6 +3,8 @@ package service;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import websocket.EventClient;
+
+import javax.validation.constraints.Null;
 import javax.websocket.Session;
 import javax.ws.rs.client.Client;
 import javax.ws.rs.client.ClientBuilder;
@@ -13,35 +15,40 @@ import static org.junit.jupiter.api.Assertions.*;
 public class ConnectionTest {
 
     private static Session session;
-    private EventClient eventClient = new EventClient();
+    private static EventClient eventClient = new EventClient();
 
+    @BeforeAll
+    static void before(){
+        session = eventClient.websocket("quiz");
+    }
     //first start the TestRestService
     @Test
     void testRestConnection(){
         Client client = ClientBuilder.newClient();
-        WebTarget webTarget = client.target("http://localhost:8090/service/test/available");
+        WebTarget webTarget = client.target("http://localhost:8092/service/test/available");
         Response response = webTarget.request().get();
 
-        assertEquals("yes", response.readEntity(String.class));
-
+        if(response != null){
+            assertEquals("yes", response.readEntity(String.class));
+        }
     }
 
     //first start the websocketserver
     @Test
     void testWebsocketConnection(){
-        session = eventClient.websocket("quiz");
-        assertNotNull(session);
+        assertNotNull(eventClient.websocket("quiz"));
     }
 
     @Test
     void closeConnection(){
-        eventClient.closeConnection(session);
-        //assertNull(session);
+        int x;
+        try{
+            x = 1;
+            eventClient.closeConnection(session);
+        }
+        catch (Exception e){
+            x = 2;
+        }
+        assertEquals(1, x);
     }
-
-    void nothing(){
-
-    }
-
-
 }

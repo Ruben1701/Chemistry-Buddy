@@ -8,16 +8,15 @@ public class LoadSerialized implements iDeserializer{
     @Override
     public String LoadQuestion(String file) {
 
-        String question;
+        String question = null;
+        FileInputStream fis = null;
+        ObjectInputStream ois = null;
         try
         {
-            FileInputStream fis = new FileInputStream(file);
-            ObjectInputStream ois = new ObjectInputStream(fis);
+            fis = new FileInputStream(file);
+            ois = new ObjectInputStream(fis);
 
             question = (String) ois.readObject();
-
-            ois.close();
-            fis.close();
         }
         catch (IOException ioe)
         {
@@ -31,7 +30,15 @@ public class LoadSerialized implements iDeserializer{
             c.printStackTrace();
         }
         //ClearFile();
-        return question;
+        finally {
+            try {
+                ois.close();
+                fis.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            return question;
+        }
     }
 
     @Override
