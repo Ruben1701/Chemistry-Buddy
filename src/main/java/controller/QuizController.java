@@ -40,7 +40,12 @@ public class QuizController implements Initializable {
         FileMonitor();
         session = quizService.startQuiz(eventClient);
 
-        String message = "UserId : " + loadSerialized.LoadQuestion("/Users/ruben/Desktop/Big Idea/Chemistry-Buddy/src/main/java/serializer/user.ser");
+        String message = null;
+        try {
+            message = "UserId : " + loadSerialized.LoadQuestion("/Users/ruben/Desktop/Big Idea/Chemistry-Buddy/src/main/java/serializer/user.ser");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         quizService.sendAnswer(eventClient, message, session);
     }
 
@@ -79,12 +84,20 @@ public class QuizController implements Initializable {
                 //runlater because UI changes need to be made on the javaFx thread
                 Platform.runLater(
                         () -> {
+                            try {
                                 setQuestion(loadSerialized.LoadQuestion("/Users/ruben/Desktop/Big Idea/Chemistry-Buddy/src/main/java/serializer/data.ser"));
+                            } catch (IOException e) {
+                                e.printStackTrace();
+                            }
+                            try {
                                 if (loadSerialized.LoadQuestion("/Users/ruben/Desktop/Big Idea/Chemistry-Buddy/src/main/java/serializer/data.ser").equals("End of quiz!")){
-                                    Quitbtn.setDisable(false);
-                                    quizFinished = true;
+                                        Quitbtn.setDisable(false);
+                                        quizFinished = true;
 
-                                }
+                                    }
+                            } catch (IOException e) {
+                                e.printStackTrace();
+                            }
                         }
                 );
                 log.log(Level.INFO, "File " + file.getName() + " has been changed");

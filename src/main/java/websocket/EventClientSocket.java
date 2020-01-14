@@ -4,6 +4,7 @@ import javax.websocket.*;
 
 import serializer.Serializer;
 
+import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.LogManager;
 import java.util.logging.Logger;
@@ -22,7 +23,7 @@ public class EventClientSocket implements java.io.Serializable{
     }
 
     @OnMessage
-    public void onWebSocketMessage(String message) {
+    public void onWebSocketMessage(String message) throws IOException {
         LogManager lgmngr = LogManager.getLogManager();
         Logger log = lgmngr.getLogger(Logger.GLOBAL_LOGGER_NAME);
         log.log(Level.INFO, "[Received]: " + message);

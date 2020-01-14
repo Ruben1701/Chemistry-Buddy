@@ -4,6 +4,8 @@ import org.json.simple.parser.ParseException;
 import org.junit.jupiter.api.Test;
 import serializer.Serializer;
 
+import java.io.IOException;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class ProfileServiceTest {
@@ -16,7 +18,7 @@ class ProfileServiceTest {
     }
 
     @Test
-    void getUserAchievements() throws ParseException {
+    void getUserAchievements() throws ParseException, IOException {
         Serializer serializer = new Serializer();
         serializer.Serialize("8", "/Users/ruben/Desktop/Big Idea/Chemistry-Buddy/src/main/java/serializer/user.ser");
         assertNotNull(profileService.getUserAchievements());

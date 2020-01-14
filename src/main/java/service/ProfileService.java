@@ -77,7 +77,11 @@ public class ProfileService implements iProfile {
 
         Form form = new Form();
         LoadSerialized loadSerialized = new LoadSerialized();
-        form.param("UserId", loadSerialized.LoadQuestion("/Users/ruben/Desktop/Big Idea/Chemistry-Buddy/src/main/java/serializer/user.ser"));
+        try {
+            form.param("UserId", loadSerialized.LoadQuestion("/Users/ruben/Desktop/Big Idea/Chemistry-Buddy/src/main/java/serializer/user.ser"));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
         Response response = webTarget.request().post(Entity.entity(form, MediaType.APPLICATION_FORM_URLENCODED));
         if (response.getStatus() == 200){
