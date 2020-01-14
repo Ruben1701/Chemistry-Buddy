@@ -17,7 +17,7 @@ public class LoginController {
 
     public TextField EmailTxt;
     public TextField PasswordTxt;
-    public final UserInterfaceService userInterfaceService = new UserInterfaceService();
+    private final UserInterfaceService userInterfaceService = new UserInterfaceService();
 
     public void LoginClicked(ActionEvent actionEvent) throws IOException {
         LoginService loginService = new LoginService();

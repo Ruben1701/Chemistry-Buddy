@@ -24,6 +24,7 @@ public class Serializer implements iSerializer {
         finally {
             Objects.requireNonNull(oos).close();
             Objects.requireNonNull(fileout).close();
+
         }
     }
 

@@ -1,6 +1,6 @@
 package model.DTO;
 
-public class AccountDTO {
+class AccountDTO {
     private int accountID;
     private String username;
     private String password;

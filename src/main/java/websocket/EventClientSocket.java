@@ -12,7 +12,7 @@ import java.util.logging.Logger;
 @ClientEndpoint
 public class EventClientSocket implements java.io.Serializable{
 
-    final Serializer serializer = new Serializer();
+    private final Serializer serializer = new Serializer();
 
     @OnOpen
     public void onWebSocketConnect() {

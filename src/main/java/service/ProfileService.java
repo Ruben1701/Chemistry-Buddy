@@ -25,7 +25,6 @@ import javax.ws.rs.core.Form;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import java.io.IOException;
-import java.lang.annotation.Retention;
 import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.LogManager;

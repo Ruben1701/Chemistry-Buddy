@@ -4,7 +4,6 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import websocket.EventClient;
 
-import javax.validation.constraints.Null;
 import javax.websocket.Session;
 import javax.ws.rs.client.Client;
 import javax.ws.rs.client.ClientBuilder;
@@ -12,10 +11,10 @@ import javax.ws.rs.client.WebTarget;
 import javax.ws.rs.core.Response;
 import static org.junit.jupiter.api.Assertions.*;
 
-public class ConnectionTest {
+class ConnectionTest {
 
     private static Session session;
-    private static EventClient eventClient = new EventClient();
+    private static final EventClient eventClient = new EventClient();
 
     @BeforeAll
     static void before(){
@@ -36,7 +35,9 @@ public class ConnectionTest {
     //first start the websocketserver
     @Test
     void testWebsocketConnection(){
-        assertNotNull(eventClient.websocket("quiz"));
+        Session session = eventClient.websocket("quiz");
+        assertNotNull(session);
+        eventClient.closeConnection(session);
     }
 
     @Test

@@ -25,21 +25,20 @@ import java.util.logging.Logger;
 
 public class QuizController implements Initializable {
 
-    public Session session;
+    private Session session;
     public Label QuestionLbl;
     public Button Quitbtn;
-    public boolean quizFinished;
+    private boolean quizFinished;
 
-    final EventClient eventClient = new EventClient();
-    final LoadSerialized loadSerialized = new LoadSerialized();
-    final QuizService quizService = new QuizService();
-    final UserInterfaceService userInterfaceService = new UserInterfaceService();
+    private final EventClient eventClient = new EventClient();
+    private final LoadSerialized loadSerialized = new LoadSerialized();
+    private final QuizService quizService = new QuizService();
+    private final UserInterfaceService userInterfaceService = new UserInterfaceService();
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         FileMonitor();
         session = quizService.startQuiz(eventClient);
-
         String message = null;
         try {
             message = "UserId : " + loadSerialized.LoadQuestion("/Users/ruben/Desktop/Big Idea/Chemistry-Buddy/src/main/java/serializer/user.ser");
@@ -49,7 +48,7 @@ public class QuizController implements Initializable {
         quizService.sendAnswer(eventClient, message, session);
     }
 
-    public void setQuestion(String question) {
+    private void setQuestion(String question) {
         QuestionLbl.setText(question);
     }
 
@@ -75,7 +74,7 @@ public class QuizController implements Initializable {
         }
     }
 
-    public void FileMonitor() {
+    private void FileMonitor() {
         LogManager lgmngr = LogManager.getLogManager();
         Logger log = lgmngr.getLogger(Logger.GLOBAL_LOGGER_NAME);
 

@@ -10,7 +10,7 @@ public class LoadSerialized implements iDeserializer{
     @Override
     public String LoadQuestion(String file) throws IOException {
 
-        String question = null;
+        String question;
         FileInputStream fis = null;
         ObjectInputStream ois = null;
         try

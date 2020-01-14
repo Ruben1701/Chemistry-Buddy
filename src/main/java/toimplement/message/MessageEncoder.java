@@ -5,7 +5,7 @@ import com.google.gson.Gson;
 import javax.websocket.Encoder;
 import javax.websocket.EndpointConfig;
 
-public class MessageEncoder implements Encoder.Text<Message> {
+class MessageEncoder implements Encoder.Text<Message> {
     private static final Gson gson = new Gson();
 
     @Override

@@ -2,10 +2,6 @@ package service;
 
 import org.junit.jupiter.api.Test;
 
-import java.awt.event.ActionEvent;
-
-import static org.junit.jupiter.api.Assertions.*;
-
 class UserInterfaceServiceTest {
 
     private UserInterfaceService userInterfaceService = new UserInterfaceService();

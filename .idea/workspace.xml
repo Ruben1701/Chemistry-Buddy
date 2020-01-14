@@ -1,13 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="travis fix">
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="exceptions caught">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/ProfileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/ProfileController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/QuizController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/QuizController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/DTO/AccountDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/DTO/AccountDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/dictionary/ElementDictionary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/dictionary/ElementDictionary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/serializer/LoadSerialized.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/serializer/LoadSerialized.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/serializer/Serializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/serializer/Serializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/serializer/data.ser" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/serializer/data.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/serializer/user.ser" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/serializer/user.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/service/ProfileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/ProfileService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/toimplement/message/MessageDecoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/toimplement/message/MessageDecoder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/toimplement/message/MessageEncoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/toimplement/message/MessageEncoder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/websocket/EventClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/websocket/EventClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/websocket/EventClientSocket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/websocket/EventClientSocket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/service/ProfileServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/service/ProfileServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/service/ConnectionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/service/ConnectionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/service/QuizServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/service/QuizServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/service/UserInterfaceServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/service/UserInterfaceServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/LoginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/ProfileController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/ProfileController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/QuizController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/QuizController$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/QuizController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/QuizController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/interfaces/iDeserializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/interfaces/iDeserializer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/interfaces/iSerializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/interfaces/iSerializer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/DTO/AccountDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/DTO/AccountDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/dictionary/ElementDictionary.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/dictionary/ElementDictionary.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/serializer/LoadSerialized.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/serializer/LoadSerialized.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/serializer/Serializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/serializer/Serializer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/service/ProfileService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/ProfileService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/toimplement/message/MessageDecoder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/toimplement/message/MessageDecoder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/toimplement/message/MessageEncoder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/toimplement/message/MessageEncoder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/websocket/EventClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/websocket/EventClient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/websocket/EventClientSocket.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/websocket/EventClientSocket.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-service.LoginServiceTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-service.LoginServiceTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/service.LoginServiceTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/service.LoginServiceTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/service/ConnectionTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/service/ConnectionTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/service/ProfileServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/service/ProfileServiceTest.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -102,7 +139,7 @@
       </list>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="MERGE" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -141,7 +178,7 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="recentsLimit" value="5" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
@@ -191,7 +228,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ConnectionTest">
+  <component name="RunManager" selected="Application.Main">
     <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
       <option name="VMOptions" />
       <option name="arguments" />
@@ -281,6 +318,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ConnectionTest.testWebsocketConnection" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Chemistry-Buddy" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="service" />
+      <option name="MAIN_CLASS_NAME" value="service.ConnectionTest" />
+      <option name="METHOD_NAME" value="testWebsocketConnection" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="QuizServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Chemistry-Buddy" />
       <extension name="coverage">
@@ -292,26 +349,6 @@
       <option name="PACKAGE_NAME" value="service" />
       <option name="MAIN_CLASS_NAME" value="service.QuizServiceTest" />
       <option name="TEST_OBJECT" value="class" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="QuizServiceTest.exitQuiz" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Chemistry-Buddy" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="service" />
-      <option name="MAIN_CLASS_NAME" value="service.QuizServiceTest" />
-      <option name="METHOD_NAME" value="exitQuiz" />
-      <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="TEST_SEARCH_SCOPE">
         <value defaultName="moduleWithDependencies" />
@@ -375,18 +412,18 @@
       <item itemvalue="Application.Main" />
       <item itemvalue="Application.Run 5" />
       <item itemvalue="JUnit.QuizServiceTest.sendAnswer" />
-      <item itemvalue="JUnit.QuizServiceTest.exitQuiz" />
       <item itemvalue="JUnit.QuizServiceTest" />
       <item itemvalue="JUnit.ConnectionTest.closeConnection" />
       <item itemvalue="JUnit.ConnectionTest" />
+      <item itemvalue="JUnit.ConnectionTest.testWebsocketConnection" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.QuizServiceTest.sendAnswer" />
+        <item itemvalue="JUnit.ConnectionTest.testWebsocketConnection" />
         <item itemvalue="JUnit.ConnectionTest" />
         <item itemvalue="JUnit.ConnectionTest.closeConnection" />
         <item itemvalue="JUnit.QuizServiceTest" />
-        <item itemvalue="JUnit.QuizServiceTest.sendAnswer" />
-        <item itemvalue="JUnit.QuizServiceTest.exitQuiz" />
       </list>
     </recent_temporary>
   </component>
@@ -461,7 +498,8 @@
       <workItem from="1578863841243" duration="4191000" />
       <workItem from="1578914234825" duration="26000" />
       <workItem from="1578914275958" duration="10142000" />
-      <workItem from="1578926512006" duration="10548000" />
+      <workItem from="1578926512006" duration="11613000" />
+      <workItem from="1579009624056" duration="4206000" />
     </task>
     <task id="LOCAL-00001" summary="leuke commit message">
       <created>1578156530347</created>
@@ -596,7 +634,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579008348508</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="exceptions caught">
+      <created>1579008497445</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1579008497445</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -624,7 +669,8 @@
     <MESSAGE value="test" />
     <MESSAGE value="bug fixes" />
     <MESSAGE value="travis fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="travis fix" />
+    <MESSAGE value="exceptions caught" />
+    <option name="LAST_COMMIT_MESSAGE" value="exceptions caught" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -654,6 +700,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/controller/LoginController.java</url>
           <line>31</line>
           <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/controller/QuizController.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="38" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -1,6 +1,5 @@
 package service;
 
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import websocket.EventClient;
@@ -12,8 +11,8 @@ import static org.junit.jupiter.api.Assertions.*;
 class QuizServiceTest {
 
     private static Session session;
-    private static EventClient eventClient = new EventClient();
-    private static QuizService quizService = new QuizService();
+    private static final EventClient eventClient = new EventClient();
+    private static final QuizService quizService = new QuizService();
 
     @BeforeEach
      void before(){
@@ -31,6 +30,7 @@ class QuizServiceTest {
         try{
             x = 1;
             quizService.sendAnswer(eventClient, "h", session);
+            eventClient.closeConnection(session);
         }
         catch (Exception e){
             x = 2;

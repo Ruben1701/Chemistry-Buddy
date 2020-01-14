@@ -27,7 +27,7 @@ public class EventClient {
         }
     }
 
-    public Session openConnection(WebSocketContainer container, String messageType) {
+    private Session openConnection(WebSocketContainer container, String messageType) {
         LogManager lgmngr = LogManager.getLogManager();
         Logger log = lgmngr.getLogger(Logger.GLOBAL_LOGGER_NAME);
         String uri = null;
