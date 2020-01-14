@@ -1,12 +1,14 @@
 package serializer;
 
 import java.io.*;
+import java.util.Objects;
+
 import interfaces.iDeserializer;
 
 public class LoadSerialized implements iDeserializer{
 
     @Override
-    public String LoadQuestion(String file) {
+    public String LoadQuestion(String file) throws IOException {
 
         String question = null;
         FileInputStream fis = null;
@@ -31,14 +33,10 @@ public class LoadSerialized implements iDeserializer{
         }
         //ClearFile();
         finally {
-            try {
-                ois.close();
-                fis.close();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-            return question;
+            Objects.requireNonNull(ois).close();
+            Objects.requireNonNull(fis).close();
         }
+        return question;
     }
 
     @Override
