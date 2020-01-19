@@ -2,6 +2,7 @@ package controller;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
+import javafx.fxml.Initializable;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.Pane;
@@ -11,6 +12,8 @@ import service.UserInterfaceService;
 import model.DTO.LoginDTO;
 
 import java.io.IOException;
+import java.net.URL;
+import java.util.ResourceBundle;
 
 public class LoginController {
 
@@ -37,4 +40,6 @@ public class LoginController {
     public void NoAccountClicked(MouseEvent mouseEvent) throws IOException {
         userInterfaceService.changeScreenMouseEvent(mouseEvent, "RegisterScreen.fxml");
     }
+
+
 }

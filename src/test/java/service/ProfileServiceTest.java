@@ -27,7 +27,7 @@ class ProfileServiceTest {
     @Test
     void getAchievmentInfo() throws ParseException {
         Object in = "1";
-        String ExpectedJsonString = "{\"Achievement_Points\":100,\"Achievement_Name\":\"Play a Game!\",\"Achievement_Id\":1}";
+        String ExpectedJsonString = "{\"Achievement_Points\":100,\"Achievement_Cost\":0,\"Achievement_Name\":\"Play a Game!\",\"Achievement_Id\":1}";
         assertEquals(profileService.getAchievementInfo(in).toString(), ExpectedJsonString);
     }
 

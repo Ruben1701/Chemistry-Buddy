@@ -2,9 +2,8 @@ package service;
 
 import com.google.gson.Gson;
 import interfaces.iProfile;
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
 import model.Achievement;
+import model.AchievementOld;
 import org.apache.http.HttpEntity;
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpGet;
@@ -26,18 +25,21 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.List;
+import java.util.function.Supplier;
 import java.util.logging.Level;
 import java.util.logging.LogManager;
 import java.util.logging.Logger;
 
 public class ProfileService implements iProfile {
 
-    private ArrayList<Achievement> allachievements = new ArrayList<>();
+    LogManager lgmngr = LogManager.getLogManager();
+    Logger log = lgmngr.getLogger(Logger.GLOBAL_LOGGER_NAME);
+
 
     @Override
-    public ObservableList<Achievement> getAllAchievements(){
-        LogManager lgmngr = LogManager.getLogManager();
-        Logger log = lgmngr.getLogger(Logger.GLOBAL_LOGGER_NAME);
+    public Achievement[] getAllAchievements(){
+
         String query = "http://localhost:8091/achievement/getallachievements";
         log.log(Level.INFO, "[Query] : " + query);
 
@@ -57,9 +59,7 @@ public class ProfileService implements iProfile {
 
             Gson gson = new Gson();
 
-            allachievements = gson.fromJson(entityString, allachievements.getClass());
-
-            return FXCollections.observableArrayList(allachievements);
+            return gson.fromJson(entityString, Achievement[].class);
         } catch (IOException e) {
 
             log.log(Level.SEVERE, "IOException : " + e.toString());
@@ -67,8 +67,25 @@ public class ProfileService implements iProfile {
         return null;
     }
 
+    public List<String> toListConverter(boolean All) throws ParseException {
 
-    public ObservableList<Achievement> getUserAchievements() throws ParseException {
+        List<String> AchievementStrings = new ArrayList<>();
+        Achievement achievements[];
+        if (All){
+            achievements = getAllAchievements();
+        }
+        else {
+            achievements = getUserAchievements();
+
+        }
+        for (Achievement achievement: achievements) {
+            AchievementStrings.add(achievement.getAchievement_Name()+" Points: "+ achievement.getAchievement_Points());
+        }
+        return AchievementStrings;
+    }
+
+
+    public Achievement[] getUserAchievements() throws ParseException {
         Client client = ClientBuilder.newClient();
 
 
@@ -79,7 +96,7 @@ public class ProfileService implements iProfile {
         try {
             form.param("UserId", loadSerialized.LoadQuestion("/Users/ruben/Desktop/Big Idea/Chemistry-Buddy/src/main/java/serializer/user.ser"));
         } catch (IOException e) {
-            e.printStackTrace();
+            log.log(Level.SEVERE, (Supplier<String>) e);
         }
 
         Response response = webTarget.request().post(Entity.entity(form, MediaType.APPLICATION_FORM_URLENCODED));
@@ -104,8 +121,9 @@ public class ProfileService implements iProfile {
 
             }
 
+            Gson gson = new Gson();
 
-            return FXCollections.observableArrayList(jsonArray);
+            return gson.fromJson(String.valueOf(jsonArray), Achievement[].class);
         }
         return null;
     }
@@ -119,7 +137,7 @@ public class ProfileService implements iProfile {
         Response response = target.request().post(Entity.entity(form1, MediaType.APPLICATION_FORM_URLENCODED));
 
         String achievementJson = response.readEntity(String.class);
-        System.out.println(achievementJson);
+        log.log(Level.INFO, achievementJson);
 
         response.close();
         return (JSONObject) parser.parse(achievementJson);

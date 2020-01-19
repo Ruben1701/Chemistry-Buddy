@@ -1,8 +1,13 @@
 package controller;
 
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
+import javafx.collections.ObservableListBase;
 import javafx.event.ActionEvent;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
+import model.Achievement;
 import org.json.simple.parser.ParseException;
 import service.ProfileService;
 import service.UserInterfaceService;
@@ -21,6 +26,8 @@ public class ProfileController implements Initializable {
     public ListView allAxchievementsLV;
 
     private final UserInterfaceService userInterfaceService = new UserInterfaceService();
+    LogManager lgmngr = LogManager.getLogManager();
+    Logger log = lgmngr.getLogger(Logger.GLOBAL_LOGGER_NAME);
 
 
     @Override
@@ -28,14 +35,17 @@ public class ProfileController implements Initializable {
 
         ProfileService profileService = new ProfileService();
 
-        allAxchievementsLV.setItems(profileService.getAllAchievements());
         try {
-            userAchievementsLV.setItems(profileService.getUserAchievements());
+            ObservableList<String> allAchievements = FXCollections.observableList(profileService.toListConverter(true));
+            ObservableList<String> userAchievements = FXCollections.observableList(profileService.toListConverter(false));
+
+            allAxchievementsLV.setItems(allAchievements);
+            userAchievementsLV.setItems(userAchievements);
+
         } catch (ParseException e) {
-            LogManager lgmngr = LogManager.getLogManager();
-            Logger log = lgmngr.getLogger(Logger.GLOBAL_LOGGER_NAME);
             log.log(Level.SEVERE, (Supplier<String>) e);
         }
+
     }
 
 

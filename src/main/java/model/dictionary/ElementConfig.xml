@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<ConfigData>
+    <element>
+        <shortname>H</shortname>
+        <fullname>Hydrogen</fullname>
+        <mass>1.00794</mass>
+    </element>
+    <element>
+        <shortname>Li</shortname>
+        <fullname>Lithium</fullname>
+        <mass>6.941</mass>
+    </element>
+    <element>
+        <shortname>Na</shortname>
+        <fullname>Sodium</fullname>
+        <mass>22.98976</mass>
+    </element>
+</ConfigData>

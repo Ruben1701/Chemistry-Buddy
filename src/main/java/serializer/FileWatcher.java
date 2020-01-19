@@ -13,7 +13,7 @@ public abstract class FileWatcher extends TimerTask {
     }
 
     public final void run() {
-        long timeStamp = file.lastModified();
+        timeStamp = file.lastModified();
 
         if( this.timeStamp != timeStamp ) {
             this.timeStamp = timeStamp;

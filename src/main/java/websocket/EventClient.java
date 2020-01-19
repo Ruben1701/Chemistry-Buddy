@@ -14,10 +14,10 @@ import java.util.logging.Logger;
 public class EventClient {
 
     private static final  String answerUri = "ws://localhost:8069/ChemistryBuddy/Quiz/";
+    LogManager lgmngr = LogManager.getLogManager();
+    Logger log = lgmngr.getLogger(Logger.GLOBAL_LOGGER_NAME);
 
     public Session websocket(String messageType){
-        LogManager lgmngr = LogManager.getLogManager();
-        Logger log = lgmngr.getLogger(Logger.GLOBAL_LOGGER_NAME);
         WebSocketContainer container = ContainerProvider.getWebSocketContainer();
         try {
             return openConnection(container, messageType);
@@ -28,8 +28,6 @@ public class EventClient {
     }
 
     private Session openConnection(WebSocketContainer container, String messageType) {
-        LogManager lgmngr = LogManager.getLogManager();
-        Logger log = lgmngr.getLogger(Logger.GLOBAL_LOGGER_NAME);
         String uri = null;
         try {
             if (messageType.equals("quiz")){
@@ -43,8 +41,6 @@ public class EventClient {
     }
 
     public void sendMessage(String message, Session session) {
-        LogManager lgmngr = LogManager.getLogManager();
-        Logger log = lgmngr.getLogger(Logger.GLOBAL_LOGGER_NAME);
         try {
             session.getBasicRemote().sendText(message);
         }
@@ -55,8 +51,6 @@ public class EventClient {
     }
 
     public void closeConnection(Session session) {
-        LogManager lgmngr = LogManager.getLogManager();
-        Logger log = lgmngr.getLogger(Logger.GLOBAL_LOGGER_NAME);
         try {
             session.close();
             log.log(Level.INFO, "Disconnected");

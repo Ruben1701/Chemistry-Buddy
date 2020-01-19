@@ -1,6 +1,0 @@
-service/ConnectionTest.class
-service/UserInterfaceServiceTest.class
-service/QuizServiceTest.class
-service/ProfileServiceTest.class
-controller/LoginControllerTest.class
-service/LoginServiceTest.class

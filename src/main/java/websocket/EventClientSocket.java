@@ -13,34 +13,27 @@ import java.util.logging.Logger;
 public class EventClientSocket implements java.io.Serializable{
 
     private final Serializer serializer = new Serializer();
+    LogManager lgmngr = LogManager.getLogManager();
+    Logger log = lgmngr.getLogger(Logger.GLOBAL_LOGGER_NAME);
 
     @OnOpen
     public void onWebSocketConnect() {
-
-        LogManager lgmngr = LogManager.getLogManager();
-        Logger log = lgmngr.getLogger(Logger.GLOBAL_LOGGER_NAME);
         log.log(Level.INFO, "[Connected]");
     }
 
     @OnMessage
     public void onWebSocketMessage(String message) throws IOException {
-        LogManager lgmngr = LogManager.getLogManager();
-        Logger log = lgmngr.getLogger(Logger.GLOBAL_LOGGER_NAME);
         log.log(Level.INFO, "[Received]: " + message);
         serializer.Serialize(message, "src/main/java/Serializer/data.ser");
     }
 
     @OnClose
     public void onWebSocketClose(CloseReason reason) {
-        LogManager lgmngr = LogManager.getLogManager();
-        Logger log = lgmngr.getLogger(Logger.GLOBAL_LOGGER_NAME);
         String msg = "[Closed]: " + reason;
         log.log(Level.WARNING, msg);
     }
     @OnError
     public void onWebSocketError(Throwable cause) {
-        LogManager lgmngr = LogManager.getLogManager();
-        Logger log = lgmngr.getLogger(Logger.GLOBAL_LOGGER_NAME);
         log.log(Level.SEVERE, "[ERROR]: " + cause.getMessage());
     }
 }

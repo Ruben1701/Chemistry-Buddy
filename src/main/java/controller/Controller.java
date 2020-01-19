@@ -21,7 +21,6 @@ import service.UserInterfaceService;
 public class Controller implements Initializable {
 
     public TextArea ElementInfotxt;
-    private Player currentPlayer;
     private final UserInterfaceService userInterfaceService = new UserInterfaceService();
 
 
@@ -38,11 +37,11 @@ public class Controller implements Initializable {
     }
 
     public void GoToProfile(ActionEvent actionEvent) throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getClassLoader().getResource("ProfileScreen.fxml"));
-        Pane pane = (Pane) loader.load();
-
-        ProfileController controller = loader.getController();
-        //controller.setCurrentPlayer(currentPlayer);
+//        FXMLLoader loader = new FXMLLoader(getClass().getClassLoader().getResource("ProfileScreen.fxml"));
+//        Pane pane = (Pane) loader.load();
+//
+//        ProfileController controller = loader.getController();
+//        //controller.setCurrentPlayer(currentPlayer);
         userInterfaceService.changeScreenActionEvent(actionEvent, "ProfileScreen.fxml");
 
     }
